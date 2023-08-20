@@ -12,6 +12,16 @@ body {
 .add{
   display:block;
 }
+.outline{
+  outline: 1px solid silver;
+}
+.outline1{
+  outline: 1px solid silver;
+}
+.outline1:hover{
+  outline: 2px solid var(--bs-primary);
+  cursor: default;
+}
 .p-light{
   margin-left: 12.5em;
   cursor: pointer;
@@ -19,6 +29,15 @@ body {
 }
 .p-light:hover{
   outline: 2px solid var(--bs-warning);
+}
+.p-dark{
+  margin-top: 2.3em;
+  margin-left: 12.5em;
+  cursor: pointer;
+  outline: 1px solid silver;
+}
+.p-dark:hover{
+  outline: 2px solid var(--bs-info);
 }
 .menu {
   display: none;

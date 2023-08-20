@@ -20432,15 +20432,16 @@ Link {
 /* .article-img {
  
 } */
-
+.Profile-img{
+  overflow: hidden;
+}
 .image-home {
-  width: 26em;
-  height: auto;
   object-fit: cover;
   margin-top: -0.5em;
   margin-left: -1em;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  width: 22em;
+  height: 22em;
+  border-radius: 50%;
 }
 
 .Main_home {
@@ -20712,7 +20713,10 @@ ul {
   padding: 1.7em;
 }
 .Profile-content {
-  margin-left: 8em;
+  margin-left: 7em;
+}
+.Profile-img{
+  
 }
 /* exploit */
 .image_exploits{
