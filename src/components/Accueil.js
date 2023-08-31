@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import { Component } from 'react';
+import React, { useState } from 'react';
+
 import Navbar from '../pages/Navbar'
 import Body_home from '../pages/Body_home'
 import Main_home from '../pages/Main_home'

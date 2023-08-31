@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import image from "./tojo.jpg"
+import userImage from "../tools/image/tojo1.png"
 import { NavLink } from "react-router-dom";
 
 export class Body_home extends Component {
   render() {
     return (
-      <div className='Body-homes bg-light'>
+      <div id='Body-homes' className='shadow-sm'>
         <main className=' p-4 mt-5 m-lg-3 d-flex flex-row justify-content-between align-items-center'>
-          <section class="bg-light rounded-1 p-4 section-home">
+          <section class="rounded-1 p-4 section-home">
             <article>
               <p className='strong h4'>Bienvenue a vous, Je suis</p>
               <section className='min-vw-50'>
@@ -32,9 +32,10 @@ export class Body_home extends Component {
               </picture>
             </div>
           </section>
-          <section>
+          <section className='section-home2'>
             <article>
-              
+              <picture>
+                <img src={userImage} alt="tojo" className='image-user'/></picture>
             </article>
           </section>
         </main>

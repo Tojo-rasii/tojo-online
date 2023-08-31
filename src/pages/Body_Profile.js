@@ -1,41 +1,43 @@
 import React, { Component } from 'react'
 import image from "../tools/image/tojo2.jpg"
+import { NavLink } from "react-router-dom";
 
 export class Body_Profile extends Component {
   render() {
     return (
       <div>
-        <main className='Profile'>
-          <header className='bg-light d-flex flex-row rounded-1 justify-content-between p-4 ps-5 pt-4'>
+        <main className='Profile pb-3'>
+          <header className='Profile-head d-flex flex-row-reverse rounded-1 p-4 ps-5 pt-4'>
             <section>
             <article>
               <picture className='Profile-img'>
-                <img src={image} alt="tojo" className='image-home shadow-sm p-3' />
+                <img src={image} alt="tojo" className='outline-gray mt-2 image-home shadow-sm p-2' />
+                <article className='mt-4'>
+                <p className='fw-semibold bi-envelope fs-5 text-primary'>&nbsp;tojorasii1619@gmail.com</p>
+                <p className='fw-semibold bi-telephone fs-5 text-body-secondary mt-4'>&nbsp;0349865752, 0344856365</p></article>
+                <NavLink to="/cv" style={{textDecoration:'none'}}>
+              <article className='d-flex flex-row gap-2'>
+                <i className='bi-link fs-2'></i><p className='fs-5 mt-2'>Curriculum vitae</p>
+              </article></NavLink>
               </picture>
             </article>
             </section>
-            <section className='Profile-content d-flex flex-column'>
+            <section className='Profile-content d-flex flex-column m-4'>
               <span className='d-flex flex-row'>
-                <p className='fw-bold h2'>Tojo RASAMIMANANA</p>
+                <p className='fw-bold h2 text-primary'>Tojo RASAMIMANANA</p>
               </span>
-              <p className='h3'>Developper UI/UX</p>
-              <p>tojorasii1619@gmail.com</p>
-              <article className=' w-75 rounded-1'>
-                <p>Passion</p>
-
+              <p className='h4 fw-bold mt-1 text-body-secondary'>Designer UI/UX</p>
+              <article className=' w-75 rounded-1 mt-4'>
+                <p className='fw-semibold fs-5 text-primary'>Description<br /><p className='fs-6 fw-semibold  text-body-secondary w-100 p-2 m-2 rounded-1 mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem a doloremque ullam facere pariatur veritatis ratione. Necessitatibus, dolores magni!</p></p>
+                
+                <p className='fw-semibold fs-5 mt-4 text-primary'>Passion</p>
+                <article className='d-flex flex-column gap-3 p-1'>
+                <span className='d-flex flex-row gap-3'><span className='outline ps-3 p-1 rounded-4 pe-3'>Boxe</span><span className='outline ps-3 p-1 rounded-4 pe-3'>MMA</span><span className='outline ps-3 p-1 rounded-4 pe-3'>Muaythai</span></span>
+                <span><span className='outline ps-3 p-1 rounded-4 pe-3'>Cuisine saine</span></span>
+                <span className='d-flex flex-row gap-3'><span className='outline ps-3 p-1 rounded-4 pe-3'>Guitare</span><span className='outline ps-3 p-1 rounded-4 pe-3'>Violant</span> </span>
+                </article>
               </article>
-              <article className='mt-3 align-items-center d-flex flex-row gap-2'>
-                <picture>
-                  <svg fill="" opacity="1.0" width="32" height="32" viewBox="0 0 24 28"><path d="M5.453 9.766V25.25H.297V9.766h5.156zm.328-4.782c.016 1.484-1.109 2.672-2.906 2.672h-.031C1.11 7.656 0 6.468 0 4.984c0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-.75-3.5-2.609-3.5-1.422 0-2.266.953-2.641 1.875-.125.344-.172.797-.172 1.266v8.641H8.296c.063-14.031 0-15.484 0-15.484h5.141v2.25h-.031c.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z" /></svg>
-                </picture>
-                <picture>
-                  <i className='bi-github fs-2'></i>
-                </picture>
-                <picture>
-                  <i className='bi-behance fs-2'></i>
-                </picture>
-              </article>
-            </section>
+              </section>
           </header>
           </main>
       </div>

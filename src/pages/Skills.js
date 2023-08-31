@@ -7,25 +7,25 @@ export class Skills extends Component {
       <div className='skills'>
         <main className='skills-main d-flex flex-row gap-4'>
             <section className='skills-section d-flex flex-wrap gap-5'>
-                <artice className="p-lg-4 shadow-lg rounded-4 bg-light">
+                <artice className="p-lg-4 shadow-lg rounded-4 skills-skills">
                     <legend className='skills-circle p-lg-5 shadow-sm'>
                         <p className='fw-bold text-info'>75%</p>
                     </legend>
                     <p className='fw-semibold text-center fs-5'>ReactJS</p>
                 </artice>
-                <artice className="p-lg-4 shadow-lg rounded-4 bg-light">
+                <artice className="p-lg-4 shadow-lg rounded-4 skills-skills">
                     <legend className='skills-circle1 p-lg-5 shadow-sm'>
-                        <p className='fw-bold text-danger'>89%</p>
+                        <p className='fw-bold para-danger'>89%</p>
                     </legend>
                     <p className='fw-semibold text-center fs-5'>HTML</p>
                 </artice>
-                <artice className="p-lg-4 shadow-lg rounded-4 bg-light">
+                <artice className="p-lg-4 shadow-lg rounded-4 skills-skills">
                     <legend className='skills-circle2 p-lg-5 shadow-sm'>
                         <p className='fw-bold text-primary'>95%</p>
                     </legend>
                     <p className='fw-semibold text-center fs-5'>CSS</p>
                 </artice>
-                <artice className="p-lg-4 shadow-lg rounded-4 bg-light">
+                <artice className="p-lg-4 shadow-lg rounded-4 skills-skills">
                     <legend className='skills-circle3 p-lg-5 shadow-sm'>
                         <p className='fw-bold text-warning'>80%</p>
                     </legend>

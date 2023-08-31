@@ -4,11 +4,12 @@ export class Body_Contact extends Component {
   render() {
     return (
       <div>
-        <main className='Contact bg-light pt-4 ms-5 me-5 pb-3'>
-        <p className='fw-semibold fs-5 bi-telephone mt-1'>&nbsp;N'hesitez pas a me contacter via mes coordonnees</p>
-            <hr className='mt-4'/>
-            <div className='d-flex flex-row flex-wrap justify-content-between m-lg-5'>
-            <section className='d-flex flex-column align-items-center gap-2'>
+        <main className='Contact'>
+            <div>
+                <p className=''></p>
+            </div>
+            <div className='d-flex flex-row flex-wrap justify-content-between mt-5 ms-5 me-5'>
+            <section className='d-flex flex-column align-items-center gap-2 p-3'>
                 <article>
                     <picture>
                     <svg fill="#dc3545" opacity="1.0" width="74" height="74" viewBox="0 0 24 24"><path d="M18.984 15v-2.016h-1.969V15h1.969zm0 3.984v-1.969h-1.969v1.969h1.969zm-6-12V5.015h-1.969v1.969h1.969zm0 4.032V9h-1.969v2.016h1.969zm0 3.984v-2.016h-1.969V15h1.969zm0 3.984v-1.969h-1.969v1.969h1.969zm-6-7.968V9H5.015v2.016h1.969zm0 3.984v-2.016H5.015V15h1.969zm0 3.984v-1.969H5.015v1.969h1.969zM15 11.016h6V21H3V6.984h6V5.015l3-3 3 3v6z"/></svg>
@@ -22,12 +23,11 @@ export class Body_Contact extends Component {
             <section className='d-flex flex-column align-items-center gap-2'>
                 <article>
                     <picture>
-                        <i className='bi-globe2 globe-icon text-danger'></i>
+                        <i className='bi-globe2 globe-icon para-danger'></i>
                     </picture>
                 </article>
                 <article>
                     <p><span className='text-dark fw-semibold'>facebook:</span> Tojo RASAMIMANANA </p>
-                    <p><span className='text-dark fw-semibold'>Instagram:</span> Tojo RASAMIMANANA</p>
                     <p><span className='text-dark fw-semibold'>Whatsapp:</span> +261349865752</p>
                     <p><span className='text-dark fw-semibold'>Twitter:</span> Tojo "The emperor" RASII</p>
                 </article>
