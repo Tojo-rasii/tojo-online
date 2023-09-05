@@ -9,22 +9,22 @@ export class Footer extends Component {
         <footer className='d-flex flex-column'>
             <section className='d-flex flex-row mt-2 ms-5 me-5 justify-content-between ps-5 pe-5 p-lg-3'>
                 <article>
-                <strong class="fs-5 para-danger">Contact</strong>
+                <strong class="fs-5 para-danger para-line">Contact</strong>
                 <div className='mt-2'>
-                        <p className='mt-4 fs-6'><i className='bi-geo-alt out text-primary rounded-circle p-1 me-1'></i>&nbsp;Antananarive, MADAGASCAR</p>
-                        <p className='mt-4 fs-6'><i className='bi-telephone p-1 out text-primary rounded-circle me-1'></i>&nbsp;+261349865752,+261344856365</p>
-                        <p className='mt-4 fs-6'><i className='bi-envelope out p-1 text-primary rounded-circle me-1'></i>&nbsp;tojorasii1619@gmail.com</p>
+                        <p className='mt-4 fs-6'><i className='bi-geo-alt text-primary rounded-circle p-1 me-1 fs-5'></i>&nbsp;Antananarive, MADAGASCAR</p>
+                        <p className='mt-4 fs-6'><i className='bi-telephone p-1 text-primary rounded-circle me-1 fs-5'></i>&nbsp;+261349865752,+261344856365</p>
+                        <p className='mt-4 fs-6'><i className='bi-envelope p-1 text-primary rounded-circle me-1 fs-5'></i>&nbsp;tojorasii1619@gmail.com</p>
                 </div>
                 </article>
                 <article>
-                <strong class="fs-5 para-danger">Lien actif</strong>
-                    <NavLink style={{textDecoration:'none'}} to="/services"><p className='mt-2'>Services offerts</p></NavLink>
+                <strong class="fs-5 para-danger para-line">Lien actif</strong>
+                    <NavLink style={{textDecoration:'none'}} to="/services"><p className='mt-3'>Services offerts</p></NavLink>
                     <NavLink style={{textDecoration:'none'}} to="/apropos"><p>Informations sur le site</p></NavLink>
                     <NavLink style={{textDecoration:'none'}} to="/contact"><p>Tous les coordonnees</p></NavLink>
                     </article>
                     <article>
-                <strong class="fs-5 para-danger">Portfolio</strong>
-                    <NavLink style={{textDecoration:'none'}} to="/cv"><p className='mt-2'>Mon Curriculum vitae</p></NavLink>
+                <strong class="fs-5 para-danger para-line">Portfolio</strong>
+                    <NavLink style={{textDecoration:'none'}} to="/cv"><p className='mt-3'>Mon Curriculum vitae</p></NavLink>
                     <NavLink style={{textDecoration:'none'}} to="/profile"><p>Mon profile</p></NavLink>
                     <NavLink style={{textDecoration:'none'}} to="/exploits"><p>Mes exploits</p></NavLink>
                     </article>

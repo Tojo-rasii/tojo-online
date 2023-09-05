@@ -20346,12 +20346,10 @@ input {
 .dark-mode{
   background-color: #141414;
   color: white;
-  transition: 0.2s;
 }
 .dark-mode1{
   background-color: #141414;
   color: var(--bs-light);
-  transition: 0.2s;
 }
 
 
@@ -20360,6 +20358,12 @@ input {
   background-color: #181818;
   transition: 0.2s;
   border-bottom: 0.5px solid var(--bs-dark-text-emphasis);
+}
+.dark-mode .nav-active{
+  color: #ec1111;
+}
+.dark-mode .nav-active:before{
+  padding: 1px;
 }
 .dark-mode #Body-homes{
   background: #181818;
@@ -20538,8 +20542,8 @@ Link {
   object-fit: cover;
   margin-top: -0.5em;
   margin-left: -4em;
-  width: 22em;
-  height: 22em;
+  width: 21em;
+  height: 21em;
   border-radius: 50%;
 }
 
@@ -20679,19 +20683,32 @@ ul {
 .Cv section{
   background: var(--bs-light);
   width: auto;
-  height: 16vh;
+  height: 27vh;
   border-radius: 5px;
+  margin: 3em;
+}
+.dark-mode .Cv section article:nth-child(2){
+  background: var(--bs-dark);
+}
+.Cv section article:nth-child(2){
+  background: var(--bs-secondary-bg);
+  margin-top: 2em;
+  cursor: pointer;
+  width: 15em;
+}
+.Cv section article:nth-child(2):hover{
+  outline: 2px solid green;
 }
 .Profile{
   padding-top: 6em;
 }
 .Apropos{
-  padding-top: 6em;
+  padding-top: 5.2em;
 }
 .Apropos div header{
   background: var(--bs-light);
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   border-radius: 3px;
 }
 .Contact{
@@ -20944,14 +20961,31 @@ ul {
   width: auto;
 }
 .image-user{
-  transform: scale(125%);
+  transform: scale(91%);
   object-fit:cover;
   z-index: 999;
-  margin-top: -2.8em;
-  margin-left: -8.5em;
+  margin-top: -3.2em;
+  margin-left: 40em;
+  border-bottom-right-radius:40%;
+  border-bottom-left-radius: 65.5%;
 }
 .outline{
   outline: 2px solid var(--bs-primary);
+}
+.outlines{
+  outline: 1px solid var(--bs-secondary-color);
+}
+.dark-mode .outlines{
+  outline: 1px solid var(--bs-dark-text-emphasis);
+}
+.outlin{
+  outline: 4px solid var(--bs-dark-border-subtle);
+}
+.outlines1{
+  outline: 3px solid var(--bs-secondary-color);
+}
+.dark-mode .outlines1{
+  outline: 3px solid var(--bs-primary);
 }
 .outline1{
   outline: 3px solid var(--bs-info);
@@ -20977,6 +21011,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: 0.2s;
 }
 /* scrollbar style */
 body::-webkit-scrollbar{
@@ -20998,4 +21033,85 @@ body::-webkit-scrollbar-track{
   border-radius: none;
   padding: 25px;
   width: 13px;
+}
+.dark-mode::-webkit-scrollbar-thumb{
+  background: var(--bs-danger);
+  border-radius: 5px;
+  margin-top: 3em;
+}
+.scroll-to-top-button{
+  position: absolute;
+  margin: -2.7em 82em;
+  background: none;
+  border: 2px solid var(--bs-primary);
+  color: var(--bs-primary);
+  transition: 0.2s;
+}
+.scroll-to-top-button:hover{
+  background: var(--bs-primary);
+  color: white;
+}
+.dark-mode .scroll-to-top-button{
+  position: absolute;
+  margin: -2.7em 82em;
+  background: none;
+  border: 2px solid var(--bs-info);
+  color: var(--bs-info);
+  transition: 0.2s;
+}
+.dark-mode .scroll-to-top-button:hover{
+  background: var(--bs-info);
+  color: white;
+}
+.langage-bg{
+  cursor: default;
+  outline: 1px solid var(--bs-dark-bg-subtle);
+}
+.dark-mode .langage-bg{
+  background: #181818;
+  outline: none;
+}
+.langage-bg:nth-child(1):hover{
+  outline: 2px solid var(--bs-info);
+}
+.langage-bg:nth-child(2):hover{
+  outline: 2px solid var(--bs-danger);
+}
+.langage-bg:nth-child(3):hover{
+  outline: 2px solid var(--bs-warning);
+}
+.langage-bg:nth-child(4):hover{
+  outline: 2px solid var(--bs-primary);
+}
+.dark-mode .bi-sun{
+  color: var(--bs-warning);
+}
+.dark1{
+  position: fixed;
+  z-index: 999999;
+  left: 96.8%;
+  top: -4.1%;
+  cursor: pointer;
+}
+.dark-mode .btn1{
+   background: none;
+   color: var(--bs-primary);
+   text-decoration: underline;
+   text-underline-offset: 4px;
+}
+.btn1{
+  background: var(--bs-light);
+}
+#Calque_1{
+  width:33em;
+  height: auto;
+  position: absolute;
+  margin-top: 1.3em;
+  left: 55%;
+  fill: var(--bs-secondary-bg);
+  opacity: 1;
+  filter: brightness(98%);
+}
+.dark-mode #Calque_1{
+  fill: #1a1d20;
 }

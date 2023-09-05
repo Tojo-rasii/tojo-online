@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from "react-router-dom";
-import image from "../tools/image/text1.jpg";
+import image from "../tools/image/text2.jpg";
 import react from "../tools/image/react.png"
 
 export class Body_Apropos extends Component {
@@ -14,7 +14,7 @@ export class Body_Apropos extends Component {
                 <article className='w-50 mt-4 me-3'>
                   <p className='bi-info-circle fw-semibold text-body-secondary'>&nbsp;A propos</p>
                   <hr className='w-25 mt-0' />
-                  <p className='h1 fw-bold'>L'elegance de mon portfolio</p>
+                  <p className='h1 fw-bold text-success'>L'elegance de mon portfolio</p>
                   <p className='text-body-secondary fw-semibold mt-3 ms-1 p-2'>là où la créativité rencontre la technologie. je suis un developpeur passionnée en conception web et en design graphique, dédiée à donner vie à vos visions numériques.</p>
                   <NavLink to="/profile"><button className='btn btn-success fw-semibold pb-2 pt-0 mt-2'><i className='bi-person-fill fs-4'>&nbsp;</i>Voir mon profile</button></NavLink>
                 </article>
@@ -32,6 +32,7 @@ export class Body_Apropos extends Component {
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-primary mt-5 pt-4'>agilite</p>
                 <p className='small w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, suscipit magnam? Est atque saepe ullam quis debitis veritatis perspiciatis expedita.</p>
+                
               </article>
             </section>
             <section className='d-flex flex-column shadow-sm p-2 rounded-1'>
@@ -39,6 +40,7 @@ export class Body_Apropos extends Component {
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-warning mt-5 pt-4'>rapidite</p>
                 <p className='small w-75 p-1 fw-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque iure ipsam debitis eaque odio pariatur eligendi sapiente quas magni.</p>
+                
               </article>
             </section>
             <section className='d-flex flex-column shadow-sm p-2 rounded-1'>
@@ -46,26 +48,27 @@ export class Body_Apropos extends Component {
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-info mt-5 pt-4'>professionnalisme</p>
                 <p className='small w-75 p-1 fw-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint totam, soluta nam iusto tempora optio ipsa minus illo nostrum!</p>
+                
               </article>
             </section>
           </div>
           <div className='footer-apropos mt-3 pb-5'>
             <section className='pt-3 ps-5'>
               <p className='text-primary fw-semibold fs-5 text-center p_right'>Technologies langage utilisee</p>
-              <div className='d-flex flex-row justify-content-between w-75 gap-5 div-left mt-4'>
-                <article className='d-flex flex-row gap-2 p-4 border-1 border w-75 justify-content-center'>
+              <div className='d-flex flex-row justify-content-between w-75 gap-5 div-left mt-4 me-3'>
+                <article className='d-flex flex-row gap-2 p-3 langage-bg w-75 justify-content-start rounded-1'>
                   <picture>
                   <img src={react} alt="react" className='react-img'/>
                   </picture>
-                  <p className='h5 mt-3'>REACTJS</p>
+                  <p className='h5 mt-3 ms-3'>REACTJS</p>
                 </article>
-                <article className='d-flex flex-row gap-2 p-4 border-1 border w-75 justify-content-center'>
+                <article className='d-flex flex-row gap-2 p-3 langage-bg w-75 justify-content-start rounded-1'>
                   <picture>
                   <svg fill="#ff0000" opacity="1.0" width="55" height="55" viewBox="0 0 22 28"><path d="M17.656 9.328l.25-2.734H4.093l.734 8.344h9.562l-.344 3.563-3.078.828-3.063-.828-.203-2.188H4.967l.344 4.344 5.656 1.563h.063v-.016l5.609-1.547.781-8.5H7.357l-.234-2.828h10.531zM0 2h22l-2 22.469L10.969 27 2 24.469z" /></svg>
                   </picture>
-                  <p className='h5 mt-3'>HTML</p>
+                  <p className='h5 mt-3 ms-3'>HTML</p>
                 </article>
-                <article className='d-flex flex-row gap-2 p-4 border-1 border w-75 justify-content-center'>
+                <article className='d-flex flex-row gap-2 p-3 langage-bg w-75 justify-content-start rounded-1'>
                   <picture>
                   <svg fill="#ffc107" id="js" opacity="1.0" width="55" height="55" viewBox="0 0 16 16">
                 <path
@@ -73,16 +76,16 @@ export class Body_Apropos extends Component {
                     fill-rule="evenodd" />
             </svg>
                   </picture>
-                  <p className='h5 mt-3 ms-1'>JavaScript</p>
+                  <p className='h5 mt-3 ms-4'>JavaScript</p>
                 </article>
-                <article className='d-flex flex-row gap-2 p-4 border-1 border w-75 justify-content-center'>
+                <article className='d-flex flex-row gap-2 p-3 langage-bg w-75 justify-content-start rounded-1'>
                   <picture>
                   <svg fill="#0d6efd" id="css" opacity="1.0" width="55" height="55" viewBox="0 0 512 512">
                 <path
                     d="M256.282 339.488zM64 32l34.946 403.219L255.767 480l157.259-44.85L448 32H64zm290.676 334.898l-98.607 28.125-98.458-28.248L150.864 289h48.253l3.433 39.562 53.586 15.163.132.273h.034l53.467-14.852L315.381 265H203l-4-50h120.646l4.396-51H140l-4-49h240.58l-21.904 251.898z" />
             </svg>
                   </picture>
-                  <p className='h5 mt-3'>CSS</p>
+                  <p className='h5 mt-3 ms-3'>CSS</p>
                 </article>
               </div>
             </section>

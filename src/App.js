@@ -12,6 +12,7 @@ import Curriculum_Vitae from './components/Curriculum_Vitae';
 import Exploits from './components/Exploits';
 import Profile from './components/Profile';
 import Loading from './components/Loading';
+import { useEffect } from 'react';
 // import DarkModeToggle from './pages/DarkModeToggle';
 
 
@@ -35,9 +36,40 @@ const scrollToTop = () => {
 
 // Attach the scroll event listener
 window.addEventListener('scroll', handleScroll);
+
+//dark-mode
+const [isDarkMode, setIsDarkMode] = useState(false);
+  useEffect(() => {
+       //body all
+        const body = document.body;
+        const div = document.querySelector('div');
+        //navbar
+        const moon = document.getElementById("moon");
+        const sun = document.getElementById("sun");
+        //home
+        if (isDarkMode) {
+          body.classList.add('dark-mode');
+          moon.style.display ="none";
+          sun.style.display ="block";
+          div.classList.add('dark-mode1');
+        } else {
+          body.classList.remove('dark-mode');
+          moon.style.display ="block";
+          sun.style.display ="none";
+          div.classList.remove('dark-mode1');
+        }
+      }, [isDarkMode]);
+    
+      const toggleDarkMode = () => {
+        setIsDarkMode(prevMode => !prevMode);
+      };
   return (
     <>
     <div>
+    <article className='nav-4 mt-5 dark1'>
+          <i className='bi-moon-stars text-primary fs-4' id="moon" onClick={toggleDarkMode}></i>
+          <i className='bi-sun fs-4' id="sun" onClick={toggleDarkMode}></i>
+    </article>
      <BrowserRouter>
       <Routes>
       <Route path="/" Component={Accueil} />
@@ -52,8 +84,8 @@ window.addEventListener('scroll', handleScroll);
     </BrowserRouter>
          {/* Scroll to top button */}
          {showButton && (
-        <button className="scroll-to-top-button rounded-circle bg-light shadow-sm" onClick={scrollToTop}>
-          <i className='bi-arrow-up text-danger fs-5'></i>
+        <button className="scroll-to-top-button rounded-circle shadow-sm float-end" onClick={scrollToTop}>
+          <i className='bi-chevron-up fs-5'></i>
         </button>
       )}
 

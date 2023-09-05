@@ -11,7 +11,7 @@ export class Body_Profile extends Component {
             <section>
             <article>
               <picture className='Profile-img'>
-                <img src={image} alt="tojo" className='outline-gray mt-2 image-home shadow-sm p-2' />
+                <img src={image} alt="tojo" className='outlin mt-2 image-home shadow-sm p-2' />
                 <article className='mt-4'>
                 <p className='fw-semibold bi-envelope fs-5 text-primary'>&nbsp;tojorasii1619@gmail.com</p>
                 <p className='fw-semibold bi-telephone fs-5 text-body-secondary mt-4'>&nbsp;0349865752, 0344856365</p></article>
@@ -26,15 +26,15 @@ export class Body_Profile extends Component {
               <span className='d-flex flex-row'>
                 <p className='fw-bold h2 text-primary'>Tojo RASAMIMANANA</p>
               </span>
-              <p className='h4 fw-bold mt-1 text-body-secondary'>Designer UI/UX</p>
+              <p className='h4 fw-bold mt-1 text-body-secondary'>Web Designer UI/UX</p>
               <article className=' w-75 rounded-1 mt-4'>
-                <p className='fw-semibold fs-5 text-primary'>Description<br /><p className='fs-6 fw-semibold  text-body-secondary w-100 p-2 m-2 rounded-1 mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem a doloremque ullam facere pariatur veritatis ratione. Necessitatibus, dolores magni!</p></p>
+                <p className='fw-semibold fs-5 text-primary'>Description<br /><p className='fs-6 fw-semibold  text-body-secondary w-100 p-2 rounded-1 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem a doloremque ullam facere pariatur veritatis ratione. Necessitatibus, dolores magni!</p></p>
                 
-                <p className='fw-semibold fs-5 mt-4 text-primary'>Passion</p>
+                <p className='fw-semibold fs-5 mt-3 text-primary'>Passion</p>
                 <article className='d-flex flex-column gap-3 p-1'>
-                <span className='d-flex flex-row gap-3'><span className='outline ps-3 p-1 rounded-4 pe-3'>Boxe</span><span className='outline ps-3 p-1 rounded-4 pe-3'>MMA</span><span className='outline ps-3 p-1 rounded-4 pe-3'>Muaythai</span></span>
-                <span><span className='outline ps-3 p-1 rounded-4 pe-3'>Cuisine saine</span></span>
-                <span className='d-flex flex-row gap-3'><span className='outline ps-3 p-1 rounded-4 pe-3'>Guitare</span><span className='outline ps-3 p-1 rounded-4 pe-3'>Violant</span> </span>
+                <span className='d-flex flex-row gap-3'><span className='outlines ps-3 p-1 rounded-4 pe-3'>Boxe</span><span className='outlines ps-3 p-1 rounded-4 pe-3'>MMA</span><span className='outlines ps-3 p-1 rounded-4 pe-3'>Muaythai</span></span>
+                <span><span className='outlines ps-3 p-1 rounded-4 pe-3'>Cuisine saine</span></span>
+                <span className='d-flex flex-row gap-3'><span className='outlines ps-3 p-1 rounded-4 pe-3'>Guitare</span><span className='outlines ps-3 p-1 rounded-4 pe-3'>Violant</span> </span>
                 </article>
               </article>
               </section>

@@ -4,24 +4,15 @@
   font-family: 'OpenSans';
   src: url('../src/tools/font/Nunito-VariableFont_wght.ttf');
 }
-/* Styles pour le mode sombre */
-.dark-mode{
-  background-color: #141414;
-  color: white;
-  transition: 0.4s;
-}
-.dark-mode1{
-  background-color: var(--bs-body-secondary);
-  color: #141414;
+@font-face {
+  font-family: 'nunito';
+  src: url('../src/tools/font/static/Nunito-ExtraBold.ttf');
 }
 
-
-/* Personnalisez les styles de Bootstrap pour le mode sombre si nécessaire */
-.dark-mode .navbar {
-  background-color: #141414;
-  transition: 0.4s;
+:root{
+  --bs-danger: #ff0000;
+  --bd-danger-dark: #ec1111;
 }
-
 .add{
   display:block;
 }
@@ -59,41 +50,40 @@
   position: relative;
   text-decoration: none;
   color: var(--bs-danger);
-  font-weight: 500;
+  font-weight: 500; 
 }
 .nav-active::before {
   content: "";
-  height: 3.9px;
-  width:3.8em;
+  height: 2.5px;
+  width: 3em;
   background: var(--bs-danger);
+  border: none;
   position: absolute;
   border-radius: 17px;
-  bottom: 20%;
-  left: 50%;
+  bottom: 30%;
+  left: 51%;
   transform: translateX(-50%);
   z-index: 999;
-  transition: 2s;
 }
-.nav-active::after {
+.nav-active1 {
+  position: relative;
+  text-decoration: none;
+  color: var(--bs-danger);
+  font-weight: 500;
+ 
+}
+.nav-active1::before {
   content: "";
-  height: 3.7px;
-  width: 0;
+  height: 2.5px;
+  width: 3em;
   background: var(--bs-danger);
+  border: none;
   position: absolute;
   border-radius: 17px;
-  bottom: -0%;
-  left: 50%;
+  bottom: 3%;
+  left: 51%;
   transform: translateX(-50%);
   z-index: 999;
-  animation: ligne 1.5s linear infinite;
-}
-@keyframes ligne{
-  0%{
-    width: 0;
-  }
-  100%{
-    width: 2em;
-  }
 }
 .nav_mobile{
   display: none;
@@ -132,4 +122,24 @@
 }
 .stars{
   margin-left: 9.1em;
+}
+.name{
+  font-family: 'nunito';
+}
+.para-line {
+  position: relative;
+  color: var(--bs-danger);
+}
+.para-line::before {
+  content: "";
+  height: 2px;
+  width:2em;
+  background: var(--bs-danger);
+  position: absolute;
+  border-radius: 17px;
+  bottom: -6%;
+  left: 34%;
+  transform: translateX(-50%);
+  z-index: 999;
+  opacity: 0.9;
 }
