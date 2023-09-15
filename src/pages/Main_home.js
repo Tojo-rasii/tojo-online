@@ -6,7 +6,7 @@ export class Main_home extends Component {
         <>
       <main className="Main_Accueil shadow-sm rounded-1 p-4">
         <h2>Mes offres services</h2>
-        <section className='d-flex flex-row flex-wrap gap-5 services-sections'>
+        <section className='services-sections'>
             <article className='mb-4 services-article'>
                 <legend>
                 <picture className='svg shadow-sm rounded-1'><svg xmlns="http://www.w3.org/2000/svg" width='32' height='32' fill="#0d6efd" className="bi bi-code" viewBox="0 0 16 16">
@@ -14,7 +14,7 @@ export class Main_home extends Component {
           </svg></picture>
                 </legend>
                 <p className='services-para h4'>Developpement front-end</p>
-                <p className=' text-body-secondary fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
+                <p className=' text-gris fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
             </article>
             <article className='mb-4 services-article1'>
 <legend>
@@ -24,7 +24,7 @@ export class Main_home extends Component {
           </svg></picture>
 </legend>
 <p className='services-para1 h5'>Logo design</p>
-<p className=' text-body-secondary fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
+<p className=' text-gris fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
             </article>
             <article className='mb-4 services-article2'>
             <legend>
@@ -33,7 +33,7 @@ export class Main_home extends Component {
           </svg></picture>
             </legend>
             <p className='services-para2 h4'>Conception design UI/UX</p>
-            <p className=' text-body-secondary fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
+            <p className=' text-gris fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
             </article>
             <article className='mb-4 services-article3'>
             <legend>
@@ -43,7 +43,7 @@ export class Main_home extends Component {
           </svg></picture>
             </legend>
             <p className='services-para3 h4'>Responsive mobile</p>
-            <p className=' text-body-secondary fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
+            <p className=' text-gris fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
             </article>
         </section>
       </main>

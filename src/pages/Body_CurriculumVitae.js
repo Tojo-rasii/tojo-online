@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 export class Body_CurriculumVitae extends Component {
   render() {
     const download =()=>{
-      const url ='/public/logo192.png';
+      const url ='../tools/image/Globe.svg';
       const a = document.createElement('a');
       a.style.display = 'none';
       a.href = url;
-      a.download = 'logo192.png';
+      a.download = 'Globe.svg';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

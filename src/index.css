@@ -65,51 +65,136 @@
   transform: translateX(-50%);
   z-index: 999;
 }
-.nav-active1 {
+.mobile-active {
   position: relative;
   text-decoration: none;
   color: var(--bs-danger);
   font-weight: 500;
  
 }
-.nav-active1::before {
+.mobile-active::before {
   content: "";
-  height: 2.5px;
-  width: 3em;
+  height: 0.5em;
+  width: 0.5em;
   background: var(--bs-danger);
   border: none;
   position: absolute;
-  border-radius: 17px;
-  bottom: 3%;
-  left: 51%;
+  border-radius: 50%;
+  bottom: 65%;
+  left: 37%;
   transform: translateX(-50%);
   z-index: 999;
 }
 .nav_mobile{
   display: none;
-  transition: 0.3s;
 }
-.nav_mobile:hover{
-  filter: brightness(88%);
-}
+#nav_pc{
+  display: block;
+ }
 /* mobile */
 @media (max-width:640px) {
-    .nav-section{
-      visibility: hidden;
-    }
+     #nav_pc{
+      display: none;
+     }
     .nav_mobile{
       display: block;
-      z-index: 9999;
-      position: fixed;
-      left: 88%;
-      font-size: 2em;
-      cursor: pointer;
-      margin-top: 0.2em;
+      margin-top: 3em;
     }
     .nav_mobile p i{
       font-weight: bold;
       background:  none;
     }
+    #list{
+      font-size: 2em;
+      position: fixed;
+      margin: -0.7em -1em;
+      cursor: pointer;
+    }
+    #close{
+      position: fixed;
+      margin: -0.9em -1.2em;
+      cursor: pointer;
+    }
+    .nav-4{
+       margin-left: -1.3em;
+    }
+    .mobile_list{
+      position: absolute;
+      left: 30%;
+      top: 90%;
+    }
+    /* body_home mobile */
+    .Body-homes{
+      height:70vh;
+    }
+    .section-home{
+      margin-top: -3em;
+    }
+    .image-user, #Calque_1{
+      display: none;
+    }
+    /* main_home mobile */
+    .Main_Accueil{
+      width: 95%;
+    }
+    .services-sections{
+      display: flex;
+      flex-direction: column;
+    }
+    .services-sections :is(.services-article, .services-article1, .services-article2,.services-article3){
+      max-width: 52em;
+      transform: scale(99.5%);
+      margin-left: -7.3em;
+    }
+
+    /* SKILLS */
+    #skills-main{
+      display: flex;
+      flex-direction:column;
+    }
+    #skills-section1{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3rem !important;
+      width: 100%;
+      margin-left: -2em;
+    }
+    .skills-skills{
+      padding: 2em;
+    }
+    #skills-section2{
+      width: 100%;
+    }
+ 
+}
+.dark-mode .mobile_list{
+  background: var(--bs-dark);
+}
+.dark-mode .mobile_list article:nth-child(1) p{
+  background: var(--bs-dark);
+}
+.dark-mode .mobile_list article:nth-child(1) p:hover{
+  background: var(--bs-gray-700);
+}
+.mobile_list{
+  background: var(--bs-light);
+  padding: 15px;
+  border-radius: 0.7em;
+  width:60%;
+  overflow: hidden;
+}
+.mobile_list article:nth-child(1) p{
+  background: var(--bs-gray-100);
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.mobile_list article:nth-child(1) p:hover{
+  background: var(--bs-gray-400); 
+  padding: 6px;
+  border-radius: 4px;
 }
 .hr{
   width: 5em;

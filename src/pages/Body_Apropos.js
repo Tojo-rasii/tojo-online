@@ -12,10 +12,10 @@ export class Body_Apropos extends Component {
             <header className='shadow-sm p-5'>
               <section className='d-flex flex-row gap-5'>
                 <article className='w-50 mt-4 me-3'>
-                  <p className='bi-info-circle fw-semibold text-body-secondary'>&nbsp;A propos</p>
+                  <p className='bi-info-circle fw-semibold text-gris'>&nbsp;A propos</p>
                   <hr className='w-25 mt-0' />
                   <p className='h1 fw-bold text-success'>L'elegance de mon portfolio</p>
-                  <p className='text-body-secondary fw-semibold mt-3 ms-1 p-2'>là où la créativité rencontre la technologie. je suis un developpeur passionnée en conception web et en design graphique, dédiée à donner vie à vos visions numériques.</p>
+                  <p className='text-gris fw-semibold mt-3 ms-1 p-2'>là où la créativité rencontre la technologie. je suis un developpeur passionnée en conception web et en design graphique, dédiée à donner vie à vos visions numériques.</p>
                   <NavLink to="/profile"><button className='btn btn-success fw-semibold pb-2 pt-0 mt-2'><i className='bi-person-fill fs-4'>&nbsp;</i>Voir mon profile</button></NavLink>
                 </article>
                 <article className='d-flex justify-content-center align-items-center'>
@@ -31,7 +31,7 @@ export class Body_Apropos extends Component {
               <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute  ms-4'><i className="bi bi-hand-thumbs-up text-primary fs-1"></i></article>
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-primary mt-5 pt-4'>agilite</p>
-                <p className='small w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, suscipit magnam? Est atque saepe ullam quis debitis veritatis perspiciatis expedita.</p>
+                <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
                 
               </article>
             </section>
@@ -39,7 +39,7 @@ export class Body_Apropos extends Component {
               <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute ms-4'><i className="bi bi-lightning text-warning fs-1"></i></article>
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-warning mt-5 pt-4'>rapidite</p>
-                <p className='small w-75 p-1 fw-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque iure ipsam debitis eaque odio pariatur eligendi sapiente quas magni.</p>
+                <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
                 
               </article>
             </section>
@@ -47,7 +47,7 @@ export class Body_Apropos extends Component {
               <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute'><i className="bi bi-emoji-sunglasses text-info fs-1"></i></article>
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-info mt-5 pt-4'>professionnalisme</p>
-                <p className='small w-75 p-1 fw-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint totam, soluta nam iusto tempora optio ipsa minus illo nostrum!</p>
+                <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
                 
               </article>
             </section>
@@ -90,7 +90,7 @@ export class Body_Apropos extends Component {
               </div>
             </section>
             <section className='section-top d-none'>
-              <p className='text-body-secondary h4 fw-semibold text-center p_right'><span className='bg-dark rounded-1 text-light p-3'>La beaute du langage</span><span className='bg-danger rounded-1 text-light p-3 pe-5 ps-5'>l'Elegance du design <i className='bi-stars'></i> </span>
+              <p className='text-gris h4 fw-semibold text-center p_right'><span className='bg-dark rounded-1 text-light p-3'>La beaute du langage</span><span className='bg-danger rounded-1 text-light p-3 pe-5 ps-5'>l'Elegance du design <i className='bi-stars'></i> </span>
               </p>
             </section>
           </div>

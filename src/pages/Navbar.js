@@ -1,15 +1,31 @@
 import { React, useState } from 'react'
 import { NavLink } from "react-router-dom";
+import { useEffect } from 'react';
 
 
 function Navbar() {
   const [active, setActive] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  useEffect(() => {
+  const list = document.getElementById("list");
+  const close = document.getElementById("close");
+  //home
+  if (isDarkMode) {
+    list.style.display ="none";
+    close.style.display ="block";
+  } else {
+    list.style.display ="block";
+    close.style.display ="none";
+  }
+}, [isDarkMode]);
   const togg = () => {
     setActive(!active)
+    setIsDarkMode(prevMode => !prevMode);
   }
+
   return (
     <div>
-      <div className='nav_pc'>
+      <div className='nav_pc' id='nav_pc'>
         <header id='nav' className='navbar fixed-top shadow-sm d-flex flex-row justify-content-between p-2 pe-5'>
           <NavLink to="/" style={{textDecoration:'none'}}><div className='logo pt-1'>
             <p className='para-T h2 fw-bold fs-3'><span className=' fs-2'>T</span><span className='text-danger mt-1 position-absolute'>R.</span></p>
@@ -44,9 +60,29 @@ function Navbar() {
         </header>
       </div>
       {/* Navbar-mobile */}
-      <nav className='nav_mobile'>
-        <p><i className='bi-list rounded-2 bg-body-secondary'></i></p>
-      </nav>
+      <div className='nav_mobile'>
+      <header id='nav' className='navbar fixed-top shadow-sm d-flex flex-row justify-content-between p-2 pe-5'>
+      <NavLink to="/" style={{textDecoration:'none'}}><div className='logo pt-1'>
+            <p className='para-T h2 fw-bold fs-3'><span className=' fs-2'>T</span><span className='text-danger mt-1 position-absolute'>R.</span></p>
+          </div></NavLink>
+          <nav>
+          <i className='bi-list' id="list" onClick={togg}></i>
+          <i className='bi-x fs-1' id="close" onClick={togg}></i>
+          </nav>
+          <section className='mobile_list shadow-lg' style={{ display: active ? "block" : "none" }}>
+            <article>
+            <NavLink to="/" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "mobile-active" : "")}><p className='bi-house'>&nbsp;Accueil</p></NavLink>
+            <NavLink to="/services" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "mobile-active" : "")}><p className='bi-info'>&nbsp;Services</p></NavLink>
+            <NavLink to="/apropos" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "mobile-active" : "")}><p className='bi-info'>&nbsp;A propos</p></NavLink>
+            <NavLink to="/contact" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "mobile-active" : "")}><p className='bi-telephone'>&nbsp;Contact</p></NavLink>
+            </article>
+            <article>
+              <p>Tojo_RASAMIMANANA</p>
+              <p>tojorasii1619@gmail.com</p>
+            </article>
+          </section>
+      </header>
+      </div>
     </div>
   )
 }

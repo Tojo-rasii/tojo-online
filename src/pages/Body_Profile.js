@@ -14,7 +14,7 @@ export class Body_Profile extends Component {
                 <img src={image} alt="tojo" className='outlin mt-2 image-home shadow-sm p-2' />
                 <article className='mt-4'>
                 <p className='fw-semibold bi-envelope fs-5 text-primary'>&nbsp;tojorasii1619@gmail.com</p>
-                <p className='fw-semibold bi-telephone fs-5 text-body-secondary mt-4'>&nbsp;0349865752, 0344856365</p></article>
+                <p className='fw-semibold bi-telephone fs-5 text-gris mt-4'>&nbsp;0349865752, 0344856365</p></article>
                 <NavLink to="/cv" style={{textDecoration:'none'}}>
               <article className='d-flex flex-row gap-2'>
                 <i className='bi-link fs-2'></i><p className='fs-5 mt-2'>Curriculum vitae</p>
@@ -26,9 +26,9 @@ export class Body_Profile extends Component {
               <span className='d-flex flex-row'>
                 <p className='fw-bold h2 text-primary'>Tojo RASAMIMANANA</p>
               </span>
-              <p className='h4 fw-bold mt-1 text-body-secondary'>Web Designer UI/UX</p>
+              <p className='h4 fw-bold mt-1 text-second'>Web Designer UI/UX</p>
               <article className=' w-75 rounded-1 mt-4'>
-                <p className='fw-semibold fs-5 text-primary'>Description<br /><p className='fs-6 fw-semibold  text-body-secondary w-100 p-2 rounded-1 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem a doloremque ullam facere pariatur veritatis ratione. Necessitatibus, dolores magni!</p></p>
+                <p className='fw-semibold fs-5 text-primary'>Description<br /><p className='fs-6 fw-semibold  text-second w-100 p-2 rounded-1 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem a doloremque ullam facere pariatur veritatis ratione. Necessitatibus, dolores magni!</p></p>
                 
                 <p className='fw-semibold fs-5 mt-3 text-primary'>Passion</p>
                 <article className='d-flex flex-column gap-3 p-1'>
