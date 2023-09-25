@@ -20395,7 +20395,7 @@ input {
 }
 .dark-mode .footer {
   background-color: #181818;
-  transition: 0.4s;
+  transition: 0.2s;
   border-top: 0.5px solid var(--bs-dark-text-emphasis);
 }
 .dark-mode .skills-skills{
@@ -20679,9 +20679,64 @@ ul {
 }
 
 .Services {
-  margin-top: 6em;
+  padding-top: 6em;
   padding-left: 2em;
   padding-right: 2em;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5em;
+}
+.dark-mode .Services section{
+  background: var(--bs-dark);
+}
+.Services section{
+  background: var(--bs-white);
+  width: 25vw;
+  height: 40vh;
+  border-radius: 0.4em;
+  padding: 8px;
+  padding-top: 1.5em;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+  font-size: 0.9em;
+  transition:  all 0.1s;
+}
+.Services section:nth-child(1){
+  cursor: default;
+}
+.Services section:nth-child(1):hover{
+  transform: scale(1.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.Services section:nth-child(2){
+  cursor: default;
+}
+.Services section:nth-child(2):hover{
+  transform: scale(1.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.Services section:nth-child(3){
+  cursor: default;
+}
+.Services section:nth-child(3):hover{
+  transform: scale(1.1);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.Services section:nth-child(4){
+  cursor: default;
+}
+.Services section:nth-child(4):hover{
+  transform: scale(1.1);
+   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.Services section article picture svg{
+  outline: 1px solid var(--bs-gray-200);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 .Cv{
   padding-top: 6em;
@@ -20692,33 +20747,53 @@ ul {
 .Cv section{
   background: var(--bs-light);
   width: auto;
-  height: 27vh;
+  height: 22vh;
   border-radius: 5px;
-  margin: 3em;
+  margin: 2em;
 }
-.dark-mode .Cv section article:nth-child(2){
-  background: var(--bs-dark);
+.dark-mode .Cv section article:nth-child(2) div{
+  background: #181818;
 }
-.Cv section article:nth-child(2){
-  background: var(--bs-secondary-bg);
+.dark-mode .Cv section article:nth-child(2) div div span button:nth-last-child(1){
+  background: none;
+}
+.Cv section article:nth-child(2) button{
+  background: green;
   margin-top: 2em;
   cursor: pointer;
-  width: 15em;
+  border: none;
+  text-align: center;
 }
-.Cv section article:nth-child(2):hover{
-  outline: 2px solid green;
+.Cv section article:nth-child(2) button:hover{
+  opacity: 1;
+}
+.Cv section article:nth-child(2) div{
+  background: white;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: block;
+}
+.Cv section article:nth-child(2) div div{
+  background: none;
+  padding: 0.3em;
+  margin-top: 0;
+}
+.Cv section article:nth-child(2) div div span button:nth-last-child(1){
+  outline: 1px solid silver;
+  color: red;
+  background: white;
 }
 .Profile{
   padding-top: 6em;
 }
 .Apropos{
-  padding-top: 5.2em;
+  padding-top: 4.6em;
 }
 .Apropos div header{
   background: var(--bs-light);
-  margin-left: 0.5em;
-  margin-right: 0.5em;
   border-radius: 3px;
+  height: 78vh;
 }
 .Contact{
   padding-top: 6em;
@@ -20803,13 +20878,20 @@ ul {
 }
 .nav-4 {
   margin-top: -0.4em;
+  display: flex;
+  flex-direction: row;
+  gap: 1.4em;
+  margin-left: -2.8em;
 }
 
 .nav-section {
-  margin-right: 1em;
+  margin-right: 4.1em;
+}
+.nav-about{
+  margin-right: 2.7em;
 }
 .text-second{
-  color: #989b9e;
+  color: var(--bs-dark-text-emphasis);
 }
 /* home */
 #Body-homes {
@@ -20973,7 +21055,7 @@ ul {
   outline: 1px solid var(--bs-dark-text-emphasis);
 }
 .outlin{
-  outline: 4px solid var(--bs-dark-border-subtle);
+  outline: 3.5px solid var(--bs-primary);
 }
 .outlines1{
   outline: 3px solid var(--bs-secondary-color);
@@ -21116,4 +21198,8 @@ body::-webkit-scrollbar-track{
 .text-gris{
   --bs-text-opacity: 1;
   color: var(--bs-secondary-color) !important;
+}
+
+.sp{
+  border: 2px solid red;
 }

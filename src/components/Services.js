@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import Body_Exploits from '../pages/Body_Exploits'
+import Navbar from '../pages/Navbar'
+import Body_Services from '../pages/Body_Services'
 
 export class Services extends Component {
   render() {
     return (
       <div>
-        <Body_Exploits />
+      <Navbar />
+      <Body_Services />
       </div>
     )
   }

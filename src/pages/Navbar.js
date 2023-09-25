@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import { NavLink } from "react-router-dom";
 import { useEffect } from 'react';
-
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -22,6 +22,9 @@ function Navbar() {
     setActive(!active)
     setIsDarkMode(prevMode => !prevMode);
   }
+  
+  //Traduction
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -33,17 +36,17 @@ function Navbar() {
           <nav>
             <section className='nav-section d-flex flex-row gap-4 mt-3 fs-6'>
               <NavLink to="/" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "nav-active" : "")}><article>
-                <p>Accueil</p>
+                <p>{t("home")}</p>
               </article></NavLink>
               <NavLink to="/Services" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "nav-active" : "")}><article>
-                <p >Services</p>
+                <p >{t("service")}</p>
               </article></NavLink>
 
-              <NavLink to="/apropos" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "nav-active" : "")}><article>
-                <p >A propos</p>
+              <NavLink to="/apropos" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "nav-active1" : "")}><article className='nav-about'>
+                <p >{t("about")}</p>
               </article></NavLink>
 
-              <NavLink to="/contact" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "nav-active1" : "")}><article className='nav-4'>
+              <NavLink to="/contact" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "nav-active2" : "")}><article className='nav-4'>
                 <button className='button btn btn-danger fw-semibold shadow-sm'>Contact</button>
               </article></NavLink>
 
@@ -75,10 +78,6 @@ function Navbar() {
             <NavLink to="/services" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "mobile-active" : "")}><p className='bi-info'>&nbsp;Services</p></NavLink>
             <NavLink to="/apropos" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "mobile-active" : "")}><p className='bi-info'>&nbsp;A propos</p></NavLink>
             <NavLink to="/contact" style={{textDecoration:'none'}} className={(nav) => (nav.isActive ? "mobile-active" : "")}><p className='bi-telephone'>&nbsp;Contact</p></NavLink>
-            </article>
-            <article>
-              <p>Tojo_RASAMIMANANA</p>
-              <p>tojorasii1619@gmail.com</p>
             </article>
           </section>
       </header>

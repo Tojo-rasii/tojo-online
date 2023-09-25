@@ -3,7 +3,6 @@ import Navbar from '../pages/Navbar'
 import Body_CurriculumVitae from '../pages/Body_CurriculumVitae'
 import { useState, useEffect } from 'react';
 import Body_Loading from '../pages/Body_Loading';
-import PostDataForm from '../pages/PostDataForm'
 
 function Curriculum_Vitae() {
     const [loading, setLoading] = useState(true);
@@ -32,8 +31,6 @@ function Curriculum_Vitae() {
       )}
       <div>
         <Navbar />
-        <br /><br /><br /><br /><br />
-        <PostDataForm />
         <Body_CurriculumVitae />
       </div>
       </>

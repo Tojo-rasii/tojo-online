@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 
-axios.get('/api/some-endpoint')
+axios.get('http:/')
 .then(response =>{
     //Handle the response data
     console.log(response.data);

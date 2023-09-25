@@ -20,8 +20,20 @@ export class Body_CurriculumVitae extends Component {
                <article>
                 <p className='fs-4 ms-3 fw-bold'>Curriculum Vitae</p>
                 </article>
-               <article className='d-flex flex-row p-1 rounded-1 shadow-sm outlines' onClick={download}>
-                <i className='bi-download fs-3 mt-1 ms-3'>&nbsp;</i><p className='mt-3 ms-2'>Telecharger en pdf</p>
+               <article onClick={download}>
+                <button className='d-flex flex-row gap-2 rounded-5 shadow-lg text-white mt-2 ms-1 pt-2 pb-2 pe-4'><i className='bi-download ms-3'></i>Telecharger <i className='bi-chevron-down'></i></button>
+                <div className='rounded-2 mt-0'>
+                <div className='d-flex flex-row gap-1'>
+                <span>
+                  <button className='bi-file-pdf-fill fs-3 p-2 ms-3 d-flex flex-row gap-2 rounded-circle shadow-sm mt-2 ms-1 pt-2 pb-2 ps-2 pe-2'></button></span>
+                  <span><button className='rounded-5 shadow-sm mt-3 ms-1 pt-1 pb-1 pe-3 ps-3'>.PDF</button></span>
+                </div>
+                <div className='d-flex flex-row gap-1'>
+                <span>
+                  <button className='bi-file-image text-info fs-3 p-2 ms-3 d-flex flex-row gap-2 rounded-circle shadow-sm mt-2 ms-1 pt-2 pb-2 ps-2 pe-2'></button></span>
+                  <span><button className='rounded-5 shadow-sm mt-3 ms-1 pt-1 pb-1 pe-3 ps-3 text-info'>.JPEG</button></span>
+                </div>
+                </div>
                 </article>
                <picture>
                </picture>

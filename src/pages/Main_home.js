@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useTranslation } from 'react-i18next';
 
-export class Main_home extends Component {
-  render() {
+function Main_home(){
+  const { t } = useTranslation();
     return (
         <>
       <main className="Main_Accueil shadow-sm rounded-1 p-4">
-        <h2>Mes offres services</h2>
+        <h2>{t("offre")}</h2>
         <section className='services-sections'>
             <article className='mb-4 services-article'>
                 <legend>
@@ -50,6 +51,5 @@ export class Main_home extends Component {
       </>
     )
   }
-}
 
 export default Main_home

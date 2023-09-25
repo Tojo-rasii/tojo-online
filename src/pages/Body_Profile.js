@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import image from "../tools/image/tojo2.jpg"
+import image from "../tools/image/tts.jpg"
 import { NavLink } from "react-router-dom";
 
 export class Body_Profile extends Component {

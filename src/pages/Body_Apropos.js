@@ -27,7 +27,7 @@ export class Body_Apropos extends Component {
             </header>
           </div>
           <div className='main-apropos mt-2 d-flex flex-row gap-4 p-3'>
-            <section className='d-flex flex-column shadow-sm p-2 rounded-1'>
+            <section className='d-flex flex-column shadow-lg p-2 rounded-4'>
               <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute  ms-4'><i className="bi bi-hand-thumbs-up text-primary fs-1"></i></article>
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-primary mt-5 pt-4'>agilite</p>
@@ -35,7 +35,7 @@ export class Body_Apropos extends Component {
                 
               </article>
             </section>
-            <section className='d-flex flex-column shadow-sm p-2 rounded-1'>
+            <section className='d-flex flex-column shadow-lg p-2 rounded-4'>
               <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute ms-4'><i className="bi bi-lightning text-warning fs-1"></i></article>
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-warning mt-5 pt-4'>rapidite</p>
@@ -43,7 +43,7 @@ export class Body_Apropos extends Component {
                 
               </article>
             </section>
-            <section className='d-flex flex-column shadow-sm p-2 rounded-1'>
+            <section className='d-flex flex-column shadow-lg p-2 rounded-4'>
               <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute'><i className="bi bi-emoji-sunglasses text-info fs-1"></i></article>
               <article className='d-flex flex-column align-items-center text-center'>
                 <p className='text-uppercase fw-bold h3 text-info mt-5 pt-4'>professionnalisme</p>
@@ -92,6 +92,10 @@ export class Body_Apropos extends Component {
             <section className='section-top d-none'>
               <p className='text-gris h4 fw-semibold text-center p_right'><span className='bg-dark rounded-1 text-light p-3'>La beaute du langage</span><span className='bg-danger rounded-1 text-light p-3 pe-5 ps-5'>l'Elegance du design <i className='bi-stars'></i> </span>
               </p>
+            </section>
+            <section className='pt-3 ps-5'>
+              <p className='text-primary fw-semibold fs-5 text-center p_right'>Outils de versioning</p>
+              <p className='text-center'><i className='bi-git para-danger fs-1'></i> GIT</p>
             </section>
           </div>
         </main>

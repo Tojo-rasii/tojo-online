@@ -1,15 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import userImage from "../tools/image/tj.png"
 import { NavLink } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
-export class Body_home extends Component {
-  render() {
+function Body_home(){
+  const { t } = useTranslation();
     return (
       <div id='Body-homes' className='Body-homes shadow-sm'>
         <main className=' p-4 mt-5 m-lg-3 d-flex flex-row justify-content-between align-items-center'>
           <section class="rounded-1 p-4 section-home">
             <article>
-              <p className='strong h4'>Bienvenue a vous, Je suis</p>
+              <p className='strong h4'>{t("welcome")}</p>
               <section className='min-vw-50'>
               <article className='d-flex flex-row gap-1'>
                 <div className='name'><p className='h2 fw-bold'>Tojo_RASAMIMANANA</p></div>
@@ -17,8 +18,8 @@ export class Body_home extends Component {
               </section>
               <p className='text-gris fw-semibold mt-1 w-75'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, porro.</p>
               <section className='d-flex flex-row gap-2'>
-              <NavLink to="/profile"><button className='btn btn-danger fw-semibold rounded-1'>En savoir plus</button></NavLink>
-              <NavLink to="/exploits"><button className='btn btn1 fw-semibold border-1 rounded-1'>Voir mes exploits</button></NavLink>
+              <NavLink to="/profile"><button className='btn btn-danger fw-semibold rounded-1'>{t("know")}</button></NavLink>
+              <NavLink to="/exploits"><button className='btn btn1 fw-semibold border-1 rounded-1'>{t("exploit")}</button></NavLink>
               </section>
             </article>
           </section>
@@ -33,7 +34,6 @@ export class Body_home extends Component {
         </main>
       </div>
     )
-  }
 }
 
 export default Body_home

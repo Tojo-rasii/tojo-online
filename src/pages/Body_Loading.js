@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
-export class Body_Loading extends Component {
-  render() {
+function Body_Loading(){
+    const { t } = useTranslation();
     return (
       <div>
           <div className='loading'>
@@ -13,7 +14,7 @@ export class Body_Loading extends Component {
                     </picture>
                 </article>
                 <article>
-                    <p className='h2 mt-3'>Loading...</p>
+                    <p className='h2 mt-3'>{t("loading")}</p>
                 </article>
             </section>
         </main>
@@ -21,7 +22,6 @@ export class Body_Loading extends Component {
       </div>
     )
   }
-}
 
 export default Body_Loading
 
