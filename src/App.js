@@ -11,10 +11,15 @@ import Profile from './components/Profile';
 import Loading from './components/Loading';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import svg from '../src/tools/svg/spin.svg'
 
 function App() {
   const [showButton, setShowButton] = useState(false);
   const [active, setActive] = useState(false);
+  const [langueActive, setLangueActive] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [chargement, setChargement] = useState(false);
+
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -68,22 +73,37 @@ function App() {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+    setChargement(true);
+    const trsl = document.getElementById("trsl");
+    trsl.style.display = "none";
+    setTimeout(() => {
+      i18n.changeLanguage(lng);
+      setLangueActive(lng);
+      setChargement(false);
+    }, 1800);
   };
   const { t } = useTranslation();
 
   return (
     <>
       <div>
+      {chargement && 
+      <div className='loading'>
+        <picture>
+          <img src={svg} alt="loading" />
+        </picture>
+        </div>}
         <article className='nav-4 mt-5 dark1'>
           <i className='bi-translate fs-4' id='translate_icon' onClick={togg}></i>
-          <section className='translate shadow-lg' style={{ display: active ? "block" : "none" }}>
+          <section className='translate shadow-lg' id='trsl' style={{ display: active ? "block" : "none" }}>
             <article>
-              <span >
-                <p onClick={() => changeLanguage('en')}>Anglais (US)</p>
+              <span>
+                <p onClick={() => changeLanguage('en')}  style={{ color: langueActive === 'en' ? 'red' : '' }}>
+                Anglais (US)</p>
               </span>
               <span>
-                <p onClick={() => changeLanguage('fr')}>Francais (FR)</p>
+                <p onClick={() => changeLanguage('fr')} style={{ color: langueActive === 'fr' ? 'red' : '' }}
+          >Francais (FR)</p>
               </span>
             </article>
           </section>

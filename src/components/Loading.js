@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Body_Loading from '../pages/Body_Loading'
+import Skeleton_Loading from '../pages/Skeleton_Loading'
 
 export class Loading extends Component {
   render() {
     return (
       <>
       <div>
-        <Body_Loading />
+        <Skeleton_Loading />
       </div>
       </>
     )

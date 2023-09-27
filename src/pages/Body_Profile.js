@@ -28,7 +28,7 @@ export class Body_Profile extends Component {
               </span>
               <p className='h4 fw-bold mt-1 text-second'>Web Designer UI/UX</p>
               <article className=' w-75 rounded-1 mt-4'>
-                <p className='fw-semibold fs-5 text-primary'>Description<br /><p className='fs-6 fw-semibold  text-second w-100 p-2 rounded-1 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem a doloremque ullam facere pariatur veritatis ratione. Necessitatibus, dolores magni!</p></p>
+                <p className='fw-semibold fs-5 text-primary'>Description<br /><p className='fs-6 fw-semibold  text-second w-100 p-2 rounded-1 mt-2'>je suis un web designer autodidacte passionné par la création de sites web modernes et esthétiquement plaisants.<br />Mon parcours en tant qu' autodidacte témoigne de ma détermination à constamment améliorer mes compétences et à rester à la pointe des dernières technologies et tendances</p></p>
                 
                 <p className='fw-semibold fs-5 mt-3 text-primary'>Passion</p>
                 <article className='d-flex flex-column gap-3 p-1'>

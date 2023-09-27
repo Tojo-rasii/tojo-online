@@ -3,6 +3,7 @@ import Navbar from '../pages/Navbar'
 import Body_Contact from '../pages/Body_Contact'
 import { useState, useEffect } from 'react';
 import Body_Loading from '../pages/Body_Loading';
+import Skeleton_Loading from '../pages/Skeleton_Loading';
 
 function Contact() {
   const [loading, setLoading] = useState(true);
@@ -18,7 +19,7 @@ function Contact() {
       }, 1000); // Temps de délai simulé de 2 secondes
     }, []);
     if (loading) {
-      return <Body_Loading />;
+      return <Skeleton_Loading />;
     }
     return ( 
       <>
