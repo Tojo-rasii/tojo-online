@@ -20768,16 +20768,23 @@ ul {
   opacity: 1;
 }
 .Cv section article:nth-child(2) div{
-  background: white;
+  background: transparent;
   padding-bottom: 1em;
   padding-left: 0.5em;
   padding-right: 0.5em;
   display: block;
+  position: absolute;
+  margin-left: 0.4em;
 }
-.Cv section article:nth-child(2) div div{
+.Cv section article:nth-child(2) div div:nth-child(1){
   background: none;
   padding: 0.3em;
   margin-top: 0;
+}
+.Cv section article:nth-child(2) div div:nth-child(2){
+  background: none;
+  padding: 0.3em;
+  margin-top: 3.5em;
 }
 .Cv section article:nth-child(2) div div span button:nth-last-child(1){
   outline: 1px solid silver;
@@ -21212,18 +21219,40 @@ body::-webkit-scrollbar-track{
   height: 12.3vh;
   background: white;
 }
+.dark-mode .SK-Nav{
+  background: #141414;
+  border-bottom: 0.5px solid var(--bs-dark-text-emphasis);
+}
 .SK-Logo{
   width: 4em;
   height: 4em;
-  border-radius: 50%;
   background: silver;
+  border-radius: 50%;
   margin-left: 0.5em;
+  animation: animate 1.5s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+.dark-mode .SK-Logo{
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
 }
 .SK-Nav-section{
   width: 50%;
   background: silver;
   border-radius: 1em;
   margin-left: 30em;
+  animation: animate 1.5s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+.dark-mode .SK-Nav-section{
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
 }
 .SK-Btn1,.SK-Btn2{
   width: 2.5em;
@@ -21231,6 +21260,15 @@ body::-webkit-scrollbar-track{
   border-radius: 50%;
   background: silver;
   margin-top: 0.7em;
+  animation: animate 1.5s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+.dark-mode .SK-Btn1, .dark-mode .SK-Btn2{
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
 }
 .SK-load main{
   width: 100%;
@@ -21239,7 +21277,122 @@ body::-webkit-scrollbar-track{
   margin-top: -3em;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-top: 6.5em;
-  padding-inline-start: 1.5em;
+  justify-content: space-around;
+  padding-top: 8.9em;
+  padding-inline-start: 3em;
+  padding-inline-end: 1em;
+}
+.dark-mode .SK-load main{
+  background: #141414;
+}
+.SK-load main section:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  margin: 1em;
+}
+.SK-load main section:nth-child(1) article:nth-child(1){
+  width: 10em;
+  height: 1em;
+  background: silver;
+  border-radius: 1em;
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+.dark-mode .SK-load main section:nth-child(1) article:nth-child(1){
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
+}
+.SK-load main section:nth-child(1) article:nth-child(2){
+  width: 22em;
+  height: 2.8em;
+  background: silver;
+  border-radius: 1em;
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+.dark-mode .SK-load main section:nth-child(1) article:nth-child(2){
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
+}
+.SK-load main section:nth-child(1) article:nth-child(3){
+  width: 19.5em;
+  height: 1.5em;
+  background: silver;
+  border-radius: 1em;
+  margin-top: 0.7em;
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+.dark-mode .SK-load main section:nth-child(1) article:nth-child(3){
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
+}
+.SK-load main section:nth-child(1) article:nth-child(4){
+  width: 14em;
+  height: 1.5em;
+  background: silver;
+  border-radius: 1em;
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+.dark-mode .SK-load main section:nth-child(1) article:nth-child(4){
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
+}
+.SK-load main section:nth-child(1) article:nth-child(5){
+  display: flex;
+  flex-direction: row;
+  gap: 0.7em;
+  margin-top: 1em;
+}
+.SK-load main section:nth-child(1) article:nth-child(5) span{
+  width: 10em;
+  height: 2.5em;
+  background: silver;
+  border-radius: 1em;
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+.dark-mode .SK-load main section:nth-child(1) article:nth-child(5) span{
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
+}
+.SK-load main section:nth-child(2) article{
+  width: 29em;
+  height: 25.5em;
+  border-radius: 1em;
+  margin-top: -2em;
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #bcbcbc 0%, #bcbcbc 30%, #d9d9d9 45%, #d9d9d9 50%, #bcbcbc 60%, #bcbcbc 100%);
+}
+@keyframes animate{
+  0%{
+    background-position: 100%;
+  }
+  100%{
+    background-position: 0%;
+  }
+}
+.dark-mode .SK-load main section:nth-child(2) article{
+  background: var(--bs-dark-text-emphasis);
+  animation: animate 1s linear infinite;
+  background-size: 400%;
+  background-image: linear-gradient(to right, #212529 0%, #212529 30%, #495057 45%, #495057 50%, #212529 60%, #212529 100%);
 }

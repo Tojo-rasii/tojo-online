@@ -1,77 +1,78 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import axios from 'axios';
+
 
 function App() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [token, setToken] = useState('');
+  const [board, setBoard] = useState(Array(9).fill(null));
+  const [xIsNext, setXIsNext] = useState(true);
 
-  const handleSignup = async () => {
-    try {
-      await axios.post('http://localhost:5000/signup', { username, password });
-      document.getElementById("dem").innerHTML='User registered successfully';
-    } catch (error) {
-      console.error(error);
+  const calculateWinner = (squares) => {
+    const lines = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ];
+    for (let i = 0; i < lines.length; i++) {
+      const [a, b, c] = lines[i];
+      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+        return squares[a];
+      }
     }
+    return null;
   };
 
-  const handleLogin = async () => {
-    try {
-      const response = await axios.post('http://localhost:5000/login', {
-        username,
-        password,
-      });
-      setToken(response.data.token);
-      alert('Login successful');
-    } catch (error) {
-      console.error(error);
+  const handleClick = (i) => {
+    const squares = [...board];
+    if (calculateWinner(squares) || squares[i]) {
+      return;
     }
+    squares[i] = xIsNext ? 'X' : 'O';
+    setBoard(squares);
+    setXIsNext(!xIsNext);
   };
+
+  const renderSquare = (i) => {
+    return (
+      <button className="square" onClick={() => handleClick(i)}>
+        {board[i]}
+      </button>
+    );
+  };
+
+  const winner = calculateWinner(board);
+  let status;
+  if (winner) {
+    status = 'Winner: ' + winner;
+  } else {
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+  }
 
   return (
-    <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/signup">Sign Up</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-        </ul>
-  
-            <h2>Sign Up</h2>
-            <input
-              type="text"
-              placeholder="Username"
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-                      <p id="dem"></p>
-      
-            <button onClick={handleSignup}>Sign Up</button>
-
-            <h2>Login</h2>
-            <input
-              type="text"
-              placeholder="Username"
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <button onClick={handleLogin}>Login</button>
-            <h2>Home</h2>
-            {token && <p>Welcome, you are logged in!</p>}
+    <div className="game">
+      <div className="game-board">
+        <div className="board-row">
+          {renderSquare(0)}
+          {renderSquare(1)}
+          {renderSquare(2)}
+        </div>
+        <div className="board-row">
+          {renderSquare(3)}
+          {renderSquare(4)}
+          {renderSquare(5)}
+        </div>
+        <div className="board-row">
+          {renderSquare(6)}
+          {renderSquare(7)}
+          {renderSquare(8)}
+        </div>
+      </div>
+      <div className="game-info">
+        <div>{status}</div>
+      </div>
     </div>
   );
 }

@@ -1,8 +1,7 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 
 function Skeleton_Loading(){
-    const { t } = useTranslation();
+
     return (
       <div className='SK-load'>
           <div>
@@ -16,10 +15,23 @@ function Skeleton_Loading(){
           </header>
           <main>
             <section>
-
+               <article>
+               </article>
+               <article>
+               </article>
+               <article>
+               </article>
+               <article>
+               </article>
+               <article>
+                <span></span>
+                <span></span>
+               </article>
             </section>
             <section>
-              
+              <article>
+
+              </article>
             </section>
           </main>
       </div>
