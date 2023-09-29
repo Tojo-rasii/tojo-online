@@ -20455,7 +20455,7 @@ textarea {
 }
 
 .dark-mode .Profile-head {
-  background: #181818;
+  background: none;
 }
 
 .dark-mode .Profile-desc {
@@ -20586,20 +20586,6 @@ Link {
 /* .article-img {
  
 } */
-.Profile-img {
-  overflow: hidden;
-  margin-left: -20m;
-}
-
-.image-home {
-  object-fit: cover;
-  margin-top: -0.5em;
-  margin-left: -4em;
-  width: 21em;
-  height: 21em;
-  border-radius: 50%;
-}
-
 .Main_home {
   margin-top: 13em;
 }
@@ -20949,11 +20935,6 @@ ul {
   color: red;
   background: white;
 }
-
-.Profile {
-  padding-top: 6em;
-}
-
 .Apropos {
   padding-top: 4.6em;
 }
@@ -21147,25 +21128,88 @@ ul {
   margin-left: -3em;
   padding: 1.7em;
 }
-
-.Profile-content {}
-
 .Profile-desc {
   background: none;
   border: 1.5px solid var(--bs-dark-text-emphasis);
 }
 
-.Profile-img {
-  margin-right: 23em;
-}
-
 .Profile {
-  margin-left: 2em;
-  margin-right: 2em;
+  padding-top: 6em;
+  padding-bottom: 0.7em;
+  padding-left: 3em;
+  margin-right: 7em;
 }
 
+.Profile-img {
+  overflow: hidden;
+  margin-left: -20m;
+}
 .Profile-head {
+  background: none;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+.Profile-head section:nth-child(1){
+  background: #ffffff;
+  padding: 0.4em;
+  border-radius: 1em;
+  padding-inline: 3em;
+  height: 79vh;
+  padding-top: 1em;
+}
+.dark-mode .Profile-head section:nth-child(1){
+  background: var(--bs-dark);
+}
+
+#hover-underline:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.image-home {
+  object-fit: cover;
+  margin-top: -0.5em;
+  margin-left: 0;
+  width: 18em;
+  height: 18em;
+  border-radius: 50%;
+}
+#i-link{
+  transform: rotate(45deg);
+}
+
+.Profile-content {
+   margin-top: 1em;
+}
+.title-profile{
   background: var(--bs-light);
+  padding: 0.4em;
+  border-radius: 1em;
+  padding-inline-start: 1.5em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  width: 27em;
+}
+.dark-mode .title-profile,.dark-mode .content-profile,.dark-mode .footer-profile{
+  background: var(--bs-dark);
+}
+.content-profile{
+  background: var(--bs-light);
+  padding: 0.4em;
+  border-radius: 1em;
+  padding-inline-start: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  width: 37em;
+}
+.footer-profile{
+  background: var(--bs-light);
+  padding: 0.4em;
+  border-radius: 1em;
+  padding-inline-start: 2.2em;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+  width: 36em;
 }
 
 /* exploit */
@@ -21174,9 +21218,6 @@ ul {
   height: auto;
 }
 
-[title="line"] {
-  text-decoration: none;
-}
 
 /* footer */
 .footer {

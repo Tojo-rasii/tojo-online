@@ -4,11 +4,11 @@ function Body_CurriculumVitae(){
   const [active, setActive] = useState(false);
 
     const download =()=>{
-      const url ='../tools/image/Globe.svg';
+      const url ='logo192.png';
       const a = document.createElement('a');
       a.style.display = 'none';
       a.href = url;
-      a.download = 'Globe.svg';
+      a.download = 'logo192.png';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
