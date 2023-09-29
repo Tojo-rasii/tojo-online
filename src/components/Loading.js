@@ -5,9 +5,9 @@ export class Loading extends Component {
   render() {
     return (
       <>
-      <div>
-        <Skeleton_Loading />
-      </div>
+        <div>
+          <Skeleton_Loading />
+        </div>
       </>
     )
   }

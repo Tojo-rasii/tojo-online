@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Navbar from '../pages/Navbar'
 import Body_Profile from '../pages/Body_Profile'
 import { useState, useEffect } from 'react';
-import Body_Loading from '../pages/Body_Loading';
+import Skeleton_Profile from '../pages/Skeleton_Profile';
 
 function Profile() {
   const [loading, setLoading] = useState(true);
@@ -18,7 +18,7 @@ function Profile() {
     }, 1000); // Temps de délai simulé de 2 secondes
   }, []);
   if (loading) {
-    return <Body_Loading />;
+    return <Skeleton_Profile />;
   }
     return (
       <> 

@@ -4,7 +4,7 @@ export class Body_Services extends Component {
   render() {
     return (
       <div>
-        <p className='h2 fw-bold title-services'>OUR SERVICES</p>
+        <p className='h2 fw-bold title-services'>MES SERVICES</p>
         <main className='Services'>
             <section>
                 <article>
