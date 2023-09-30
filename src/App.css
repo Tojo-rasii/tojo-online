@@ -21831,3 +21831,13 @@ body::-webkit-scrollbar-track {
 .dark-mode .SK-load-Profile main section:nth-child(2) section:nth-child(3){
   background: #181818;
 }
+
+/* FOOTER */
+.footer footer section:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#icon-mobile{
+  margin: 2em;
+}

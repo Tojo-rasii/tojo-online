@@ -28,7 +28,7 @@ function Footer_home() {
       <div>
         <main className="Footer-contact shadow-sm rounded-1 p-4 mb-3">
          <h2>Contact</h2>
-         <section className='d-flex flex-row-reverse justify-content-between'>
+         <section className='d-flex flex-row-reverse justify-content-between ' id='contact'>
             <article>
             <footer className='d-flex justify-content-center mb-5'>
             <section className='mt-5 ms-5 d-flex flex-column'>

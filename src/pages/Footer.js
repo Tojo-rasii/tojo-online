@@ -7,7 +7,7 @@ export class Footer extends Component {
       <>
       <main className='footer bottom-fixed w-100'>
         <footer className='d-flex flex-column'>
-            <section className='d-flex flex-row mt-2 ms-5 me-5 justify-content-between ps-5 pe-5 p-lg-3'>
+            <section className='mt-2 ms-5 me-5 ps-5 pe-5 p-lg-3' id='mobile-footer'>
                 <article>
                 <strong class="fs-5 para-danger para-line">Contact</strong>
                 <div className='mt-2'>
@@ -28,7 +28,7 @@ export class Footer extends Component {
                     <NavLink style={{textDecoration:'none'}} to="/profile"><p>Mon profile</p></NavLink>
                     <NavLink style={{textDecoration:'none'}} to="/exploits"><p>Mes exploits</p></NavLink>
                     </article>
-                    <article className="d-flex gap-2 m-3">
+                    <article className="d-flex gap-2" id='icon-mobile'>
                         <i className='bi bi-facebook fs-2 para-danger'></i>
                         <i className='bi bi-twitter fs-2 para-danger'></i>
                         <i className='bi bi-instagram fs-2 para-danger'></i>
