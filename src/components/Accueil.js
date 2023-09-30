@@ -10,6 +10,7 @@ import Skills from '../pages/Skills'
 
 export class Accueil extends Component {
     render() {
+
         return (
             <>
                 <div>
