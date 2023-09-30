@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tojo-online/static/css/main.b02ef4c7.css",
+    "main.js": "/tojo-online/static/js/main.621509c5.js",
+    "static/media/text2.jpg": "/tojo-online/static/media/text2.9f6e3eaae0d28e04d80a.jpg",
+    "static/media/Nunito-VariableFont_wght.ttf": "/tojo-online/static/media/Nunito-VariableFont_wght.4a3eef3e0a61b7eb3eda.ttf",
+    "static/media/tts.jpg": "/tojo-online/static/media/tts.49ed7d7c53c6c51c6287.jpg",
+    "static/media/bootstrap-icons.woff?": "/tojo-online/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/Page.png": "/tojo-online/static/media/Page.66e1555ab8bc8cdf8463.png",
+    "static/media/Nunito-ExtraBold.ttf": "/tojo-online/static/media/Nunito-ExtraBold.99f1fa27c5aaa2c5afb6.ttf",
+    "static/media/bootstrap-icons.woff2?": "/tojo-online/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/tj.png": "/tojo-online/static/media/tj.d56cefdabed44fdb36ef.png",
+    "static/media/react.png": "/tojo-online/static/media/react.20adfb35ae6a6e5817bf.png",
+    "static/media/spin.svg": "/tojo-online/static/media/spin.83b990c644510e4643d6fad028418db1.svg",
+    "index.html": "/tojo-online/index.html",
+    "main.b02ef4c7.css.map": "/tojo-online/static/css/main.b02ef4c7.css.map",
+    "main.621509c5.js.map": "/tojo-online/static/js/main.621509c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b02ef4c7.css",
+    "static/js/main.621509c5.js"
+  ]
+}

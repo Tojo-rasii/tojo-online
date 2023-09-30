@@ -41,7 +41,7 @@ function Footer_home() {
                     <p className='text-gris fw-semibold mt-2 w-75'>N'oubliez pas de me laisser quelques message en donnant votre avis</p>
                 </article>
                 <article className='Formulaire'>
-                    <form onSubmit={handleSubmit}>
+                    {/* <form onSubmit={handleSubmit}> */}
                         <label htmlFor="">Nom</label><br />
                         {/* <input type="text" name='name' value={inputValue} onChange={handleInputChange} className='p-3 rounded-1 w-75 mt-1 shadow-sm'/> */}
                         <input type="text" name='name' className='p-3 rounded-1 w-75 mt-1 shadow-sm'/>
@@ -56,7 +56,7 @@ function Footer_home() {
                         &nbsp;<input type="submit" value="Envoyer" className='btn btn-primary ms-5 mt-2 p-3 w-50 rounded-1 fw-semibold
                         '/>
                         <p className='value'></p>
-                    </form>
+                    {/* </form> */}
                 </article>
             </section>
         </footer>
