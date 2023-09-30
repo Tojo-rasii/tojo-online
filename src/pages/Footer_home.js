@@ -1,16 +1,16 @@
 
-import axios from 'axios';
+// import axios from 'axios';
 import React, { useState } from 'react'
 
-axios.get('http:/')
-.then(response =>{
-    //Handle the response data
-    console.log(response.data);
-})
-.catch(error =>{
-    //Handle any errors
-    console.error(error);
-});
+// axios.get('http:/')
+// .then(response =>{
+//     //Handle the response data
+//     console.log(response.data);
+// // })
+// .catch(error =>{
+//     //Handle any errors
+//     console.error(error);
+// });
 
 function Footer_home() {
     const [inputValue, setInputValue]= useState('');
@@ -43,7 +43,10 @@ function Footer_home() {
                 <article className='Formulaire'>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="">Nom</label><br />
-                        <input type="text" name='name' value={inputValue} onChange={handleInputChange} className='p-3 rounded-1 w-75 mt-1 shadow-sm'/><br />
+                        {/* <input type="text" name='name' value={inputValue} onChange={handleInputChange} className='p-3 rounded-1 w-75 mt-1 shadow-sm'/> */}
+                        <input type="text" name='name' className='p-3 rounded-1 w-75 mt-1 shadow-sm'/>
+                        
+                        <br />
                         <label htmlFor="" className='mt-2'>Prenom</label><br />
                         <input type="text" name='firstname' className='p-3 rounded-1 w-75 mt-1 shadow-sm'/><br />
                         <label htmlFor="" className='mt-2'>Email</label><br />
