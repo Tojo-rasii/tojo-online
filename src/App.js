@@ -1,6 +1,6 @@
 import './App.css';
 import { React, useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Accueil from './components/Accueil';
 import Services from './components/Services';
 import Apropos from './components/Apropos';
@@ -110,7 +110,7 @@ function App() {
           <i className='bi-moon-stars text-primary fs-4' id="moon" onClick={toggleDarkMode}></i>
           <i className='bi-sun fs-4' id="sun" onClick={toggleDarkMode}></i>
         </article>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" Component={Accueil} />
             <Route path="/services" Component={Services} />
@@ -121,7 +121,7 @@ function App() {
             <Route path="/profile" Component={Profile} />
             <Route path="/Loading" Component={Loading} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
         {/* Scroll to top button */}
         {showButton && (
           <button className="scroll-to-top-button rounded-circle shadow-sm float-end" onClick={scrollToTop}>
