@@ -112,14 +112,14 @@ function App() {
         </article>
         <HashRouter>
           <Routes>
-            <Route path="/" Component={Accueil} />
-            <Route path="/services" Component={Services} />
-            <Route path="/apropos" Component={Apropos} />
-            <Route path="/contact" Component={Contact} />
-            <Route path="/cv" Component={Curriculum_Vitae} />
-            <Route path="/exploits" Component={Exploits} />
-            <Route path="/profile" Component={Profile} />
-            <Route path="/Loading" Component={Loading} />
+            <Route path="/" element={<Accueil />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/apropos" element={<Apropos />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/cv" element={<Curriculum_Vitae />} />
+            <Route path="/exploits" element={<Exploits />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/Loading" element={<Loading />} />
           </Routes>
         </HashRouter>
         {/* Scroll to top button */}
